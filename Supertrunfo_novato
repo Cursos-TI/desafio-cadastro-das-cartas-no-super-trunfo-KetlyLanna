@@ -1,4 +1,6 @@
 
+ //Super trunfo - Nível novato.
+ 
  #include <stdio.h>
  
  int main(){
@@ -6,10 +8,12 @@
  char estado[50];
  char codigo_carta[25];
  char nome_da_cidade[50];
- int população;
+ int populacao;
  float area_km2;
  float pib;
  int pontos_turisticos;
+ float densidade_populacional;
+ float pib_per_capita;
  
  /* Nesse primeiro momento vou "pedir" 
  as informações para o usuário, para a primeira carta*/
@@ -23,7 +27,7 @@
  scanf("%s",nome_da_cidade);
  
  printf("Qual o valor da população?: \n");
- scanf("%d", & população);
+ scanf("%d", & populacao);
  
  printf("Qual a área em KM^2");
  scanf("%f", &area_km2);
@@ -34,7 +38,12 @@
  printf("Quantos Pontos turísticos?: \n");
  scanf("%d", &pontos_turisticos);
  
- // Segunda carta:
+  //cálculos da densidade populacional e PIB per capita
+
+  densidade_populacional = (float) populacao/area_km2;
+  pib_per_capita = pib/populacao;
+ 
+  // Segunda carta:
  printf("Digite o Estado: \n");
  scanf("%s",estado);
  
@@ -45,7 +54,7 @@
  scanf("%s",nome_da_cidade);
  
  printf("Qual o valor da população?: \n");
- scanf("%d", &população);
+ scanf("%d", &populacao);
  
  printf("Qual a área em KM^2");
  scanf("%f", &area_km2);
@@ -56,6 +65,11 @@
  printf("Quantos Pontos turísticos?: \n");
  scanf("%d", &pontos_turisticos);
  
+ //cálculos da densidade populacional e PIB per capita2
+ densidade_populacional = (float) populacao/area_km2;
+  pib_per_capita =(float) pib/populacao;
+ 
+ 
  //confirmando os dados
  printf("\n___Dados carta 1___ \n");
  
@@ -65,7 +79,7 @@
  
  printf("Nome da Cidade: %s \n", nome_da_cidade);
  
- printf("População: %f \n", &população);
+ printf("População: %f \n", &populacao);
  
  printf("Área em KM^2: %f \n", &area_km2);
  
@@ -73,6 +87,10 @@
  
  printf("Pontos Turísticos: %d \n", &pontos_turisticos);
  
+ printf("Densidade populacional: %f \n");
+ 
+ printf("PIB per capita: %f \n");
+
  //confirmando os dados 2
  printf("\n___Dados carta 2___ \n");
  
@@ -82,7 +100,7 @@
  
  printf("Nome da Cidade: %s \n", nome_da_cidade);
  
- printf("População: %f \n", &população);
+ printf("População: %f \n", &populacao);
  
  printf("Área em KM^2: %f \n", &area_km2);
  
@@ -90,7 +108,9 @@
  
  printf("Pontos Turísticos: %d \n", &pontos_turisticos);
  
+ printf("Densidade populacional: %f \n");
  
+ printf("PIB per capita: %f \n");
  
  
  return 0;

@@ -1,5 +1,4 @@
-//Super trunfo - Nível novato.
- 
+
  #include <stdio.h>
  
  int main(){
@@ -35,6 +34,28 @@
  printf("Quantos Pontos turísticos?: \n");
  scanf("%d", &pontos_turisticos);
  
+ // Segunda carta:
+ printf("Digite o Estado: \n");
+ scanf("%s",estado);
+ 
+ printf("Digite o codigo da carta: \n");
+ scanf("%s", codigo_carta);
+ 
+ printf("Digite o nome da cidade: \n");
+ scanf("%s",nome_da_cidade);
+ 
+ printf("Qual o valor da população?: \n");
+ scanf("%d", &população);
+ 
+ printf("Qual a área em KM^2");
+ scanf("%f", &area_km2);
+ 
+ printf("Quanto é o PIB atual?: \n");
+ scanf("%f", &pib);
+ 
+ printf("Quantos Pontos turísticos?: \n");
+ scanf("%d", &pontos_turisticos);
+ 
  //confirmando os dados
  printf("\n___Dados carta 1___ \n");
  
@@ -51,6 +72,25 @@
  printf("PIB: %f \n", &pib);
  
  printf("Pontos Turísticos: %d \n", &pontos_turisticos);
+ 
+ //confirmando os dados 2
+ printf("\n___Dados carta 2___ \n");
+ 
+ printf("Estado:\n %s \n", estado);
+ 
+ printf("Código da carta: %s \n", codigo_carta);
+ 
+ printf("Nome da Cidade: %s \n", nome_da_cidade);
+ 
+ printf("População: %f \n", &população);
+ 
+ printf("Área em KM^2: %f \n", &area_km2);
+ 
+ printf("PIB: %f \n", &pib);
+ 
+ printf("Pontos Turísticos: %d \n", &pontos_turisticos);
+ 
+ 
  
  
  return 0;
